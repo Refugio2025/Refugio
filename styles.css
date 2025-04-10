@@ -1,10 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    background: url("imag/IMG_7346.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
+    /* color: #333; */
+} */
 
 header {
     background-color: #6200ea;
@@ -13,20 +22,55 @@ header {
     text-align: center;
 }
 
-main {
-    padding: 2rem;
+.lead{
+    position: relative;
     text-align: center;
 }
 
-button {
-    background-color: #6200ea;
+.misi-visi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
+.btn-pastores, .btn-filiales, .btn-directiva,.btn-miembros,.btn-redes {
+    background-color: #4c08ec;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 6px;
+    margin: 10px;
+    text-align: center;
+    /* padding: 0px 10px 0px 0px 10px; */
+
 }
 
-button:hover {
-    background-color: #3700b3;
+.btn-pastores:hover,
+.btn-filiales:hover,
+.btn-directiva:hover,
+.btn-miembros:hover,
+.btn-redes:hover {
+    background-color: #2f0397;
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+.btn-pastores:hover,
+.btn-filiales,
+.btn-directiva,
+.btn-miembros,
+.btn-redes{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
 }
