@@ -12,8 +12,8 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: 0;
     padding: 0;
-    /* color: #333; */
-} */
+    
+}
 
 header {
     background-color: #6200ea;
@@ -22,9 +22,16 @@ header {
     text-align: center;
 }
 
+.container{
+    padding-top: 40px;
+}
+
 .lead{
     position: relative;
     text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    font-family: bold;
 }
 
 .misi-visi{
@@ -37,9 +44,14 @@ header {
 .botones{
     display: flex;
     justify-content: center;
-    
+    margin:20px auto;
+}
 
-
+.misi, .visi{
+    background-color: rgb(255, 255, 255, 0.3);
+    margin: 1rem;
+    border-radius: 10px;
+    backdrop-filter:blur(3px);
 }
 
 .btn-pastores, .btn-filiales, .btn-directiva,.btn-miembros,.btn-redes {
@@ -51,7 +63,6 @@ header {
     margin: 10px;
     text-align: center;
     /* padding: 0px 10px 0px 0px 10px; */
-
 }
 
 .btn-pastores:hover,
@@ -63,7 +74,7 @@ header {
     cursor: pointer;
 }
 
-@media(max-width:600px){
+/* @media(max-width:600px){
 .btn-pastores:hover,
 .btn-filiales,
 .btn-directiva,
@@ -73,4 +84,4 @@ header {
     width: 100%;
     margin-bottom: 10px;
 }
-}
+} */
